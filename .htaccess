@@ -1,0 +1,16 @@
+Order Deny,Allow
+
+<Files .htaccess>
+	Order Allow,Deny
+	Deny from all
+</Files>
+
+RewriteEngine on
+RewriteRule ^(.*)\.pdf$ $1.pdf [L]
+RewriteRule ^(.*)\.zip$ $1.zip [L]
+RewriteRule ^(.*)\.woff$ $1.woff [L]
+RewriteRule ^(.*)\.woff2$ $1.woff2 [L]
+RewriteRule ^(.*)\.html$ $1.html [L]
+RewriteRule ^(.*)\.txt$ $1.txt [L]
+RewriteRule ^(.*)\.xml$ $1.xml [L]
+RewriteRule ^(.*)$ index.php [L]
