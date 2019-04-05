@@ -41,7 +41,7 @@ class Main{
 		$this->logo = !empty($data['logo']) ? \Helper::prepareImage($data['logo']) : '';
 		$this->phone = !empty($data['phone']) ? $data['phone'] : '';
 		$this->address = !empty($data['address']) ? $data['address'] : '';
-		$this->abstract = !empty($data['abstract']) ? json_decode($data['abstract'], true) : array();
+		$this->abstract = !empty($data['abstract']) ? $this->prepareAbstract($data['abstract']) : array();
 		$this->text = $data['introtext'].$data['fulltext'];
 		$this->blocks = $data['blocks'];
 		$this->menu = $data['menu'];
@@ -79,5 +79,18 @@ class Main{
         $adapter = new $adapterName($this->config, $this->template);
 
         $adapter->show($block, $i, $this->view, $params);
+    }
+
+    private function prepareAbstract($data){
+	    if(!is_array($data)){
+	        return array();
+        }
+
+	    $array = array();
+        foreach ($data as $v) {
+            $array[$v['name']] = $v['desc'];
+	    }
+
+        return $array;
     }
 }
