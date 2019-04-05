@@ -23,7 +23,7 @@ class Comments extends Main
 	{
 		$this->type = $block['type'];
 		$this->id = $block['alias'];
-		$this->title = $block['name'];
+		$this->title = $block['title'];
 		$this->view = $view;
 		$this->input = json_decode($block['input'], true);
 

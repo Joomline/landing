@@ -19,7 +19,7 @@ class Info extends Main
 	{
 		$this->type = $block['type'];
 		$this->id = $block['alias'];
-		$this->title = $block['name'];
+		$this->title = $block['title'];
 		$this->input = $block['input'];
 
 		$this->loadTpl();

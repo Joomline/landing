@@ -21,7 +21,7 @@ class Map extends Main
 	{
 		$this->type = $block['type'];
 		$this->id = $block['alias'];
-		$this->title = $block['name'];
+        $this->title = $block['title'];
 		$this->input = json_decode($block['input'], true);
 
 		$center_lat = isset($this->input['center_lat']) ? (float)$this->input['center_lat'] : 0;

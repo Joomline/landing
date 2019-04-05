@@ -21,7 +21,7 @@ class Feedback extends Main
 	{
 		$this->type = $block['type'];
 		$this->id = $block['alias'];
-		$this->title = $block['name'];
+		$this->title = $block['title'];
 		$this->input = json_decode($block['input'], true);
 		$this->action = 'index.php?task=send_mail&adapter=feedback';
 		$this->loadTpl();
