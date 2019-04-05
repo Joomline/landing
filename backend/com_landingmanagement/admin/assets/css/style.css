@@ -1,0 +1,65 @@
+#sortable-fields {}
+#sortable-pos {}
+
+.positions {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: block;
+	min-height: 150px;
+	background-color: #f0f0f0;
+	border: 1px dashed silver;
+	overflow: hidden;
+	width: 100%
+}
+.fields {
+	display: block;
+    width: 150px;
+    height: 40px;
+    overflow: hidden;
+	border: 1px solid silver;
+	padding: 4px 6px 3px 24px;
+	margin: 2px;
+	float: left;
+	cursor: move;
+}
+
+.fields.core {
+	background: url(../images/state.png) #f9f9f9 no-repeat  3px 50%;
+}
+
+div table.admintable td {
+	border:1px solid #F0F0F0;
+	font-weight: normal;
+	text-align: left;
+	padding: 6px 4px 6px 4px;
+}
+div table.admintable td.key{
+	background-color: #E6E6E6;
+	border:1px solid #D6D6D6;
+	color: #666666;
+	font-weight:normal;
+	text-align:right;
+	width: 140px;
+	padding: 2px 8px 2px 4px;
+}
+div table.admintable th.key {
+	background-color: #E6E6E6;
+	border:1px solid #D6D6D6;
+	color: #666666;
+	font-weight:bold;
+	text-align:center;
+	padding: 2px 8px 2px 4px;
+}
+
+div div#element-box div.m {
+	background-color: #FFFFFF;
+}
+
+div fieldset input, div fieldset textarea, div fieldset select, div fieldset img, div fieldset button {
+	margin: 2px 2px 2px 0px;
+}
+
+div table.admintable h4 {
+    margin: 5px 0;
+}

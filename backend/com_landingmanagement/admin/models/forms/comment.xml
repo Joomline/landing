@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<form>
+    <fieldset addfieldpath="administrator/components/com_landingmanagement/models/fields">
+        <field name="id"
+               type="text"
+               default="0"
+               label="JGLOBAL_FIELD_ID_LABEL"
+               readonly="true"
+        />
+        <field name="site_id"
+               type="siteid"
+               default="0"
+               label="COM_LANDINGMANAGEMENT_COMMENT_SITE_ID"
+               readonly="false"
+        />
+        <field name="title"
+               type="text"
+               label="COM_LANDINGMANAGEMENT_COMMENT_NAME"
+               description="COM_LANDINGMANAGEMENT_COMMENT_NAME_DESC"
+               required="true"
+               size="30"
+               class="inputbox"
+        />
+        <field name="image"
+               type="media"
+               label="COM_LANDINGMANAGEMENT_COMMENT_IMAGE"
+               description="COM_LANDINGMANAGEMENT_COMMENT_IMAGE_DESC"
+        />
+        <field name="link"
+               type="url"
+               label="COM_LANDINGMANAGEMENT_COMMENT_LINK"
+               description="COM_LANDINGMANAGEMENT_COMMENT_LINK_DESC"
+               filter="RAW"
+               class="inputbox"
+        />
+        <field name="comment"
+               type="editor"
+               label="JGLOBAL_FULL_TEXT"
+               description="JGLOBAL_FULL_TEXT"
+               buttons="true"
+               filter="RAW"
+        />
+        <field name="created"
+               type="calendar"
+               label="JGLOBAL_CREATED_DATE"
+               description="JGLOBAL_CREATED_DATE"
+               size="22"
+               class="inputbox"
+               format="%Y-%m-%d %H:%M:%S"
+               filter="user_utc"
+        />
+        <field name="created_by"
+               type="user"
+               label="JGLOBAL_FIELD_CREATED_BY_LABEL"
+               description="JGLOBAL_FIELD_CREATED_BY_LABEL"
+        />
+
+        <field name="published"
+               type="list"
+               label="JSTATUS"
+               description="JFIELD_PUBLISHED_DESC"
+               class="inputbox"
+               filter="intval"
+               size="1"
+               default="1">
+            <option value="1">JPUBLISHED</option>
+            <option value="0">JUNPUBLISHED</option>
+        </field>
+
+        <fields name="params">
+            <fieldset name="basic">
+
+            </fieldset>
+        </fields>
+    </fieldset>
+
+</form>

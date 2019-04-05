@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<form>
+    <fieldset>
+        <field name="id"
+               type="text"
+               default="0"
+               label="JGLOBAL_FIELD_ID_LABEL"
+               readonly="true"/>
+        <field name="title"
+               type="text"
+               label="JGLOBAL_TITLE"
+               description="JFIELD_TITLE_DESC"
+               required="true"
+               class="inputbox input-xxlarge input-large-text"
+               size="40"/>
+        <field
+                name="alias"
+                type="text"
+                label="JFIELD_ALIAS_LABEL"
+                description="JFIELD_ALIAS_DESC"
+                size="40"
+                class="inputbox input-xxlarge input-large-text"/>
+        <field name="menu_title"
+               type="text"
+               label="COM_LANDINGMANAGEMENT_MENU"
+               description="COM_LANDINGMANAGEMENT_MENU"
+               required="false"
+               class="inputbox input-xxlarge input-large-text"
+               size="40"/>
+        <field
+                name="published"
+                type="list"
+                label="JSTATUS"
+                description="JFIELD_PUBLISHED_DESC"
+                class="chzn-color-state"
+                filter="intval"
+                size="1"
+                default="1">
+            <option value="1">JPUBLISHED</option>
+            <option value="0">JUNPUBLISHED</option>
+        </field>
+        <field
+                name="created_by"
+                type="user"
+                label="JGLOBAL_FIELD_CREATED_BY_LABEL"
+                description="JGLOBAL_FIELD_CREATED_BY_LABEL"/>
+        <field
+                name="created"
+                type="calendar"
+                label="JGLOBAL_CREATED_DATE"
+                description="JGLOBAL_CREATED_DATE"
+                size="22"
+                class="inputbox" format="%Y-%m-%d %H:%M:%S"
+                filter="user_utc"/>
+        <field
+                name="input"
+                type="plugininput"
+                label="COM_LANDINGMANAGEMENT_BLOCK_INPUT"
+                description="COM_LANDINGMANAGEMENT_BLOCK_INPUT"
+                />
+        <field
+                name="type"
+                type="typeinput"
+                default="0"
+                label="COM_LANDINGMANAGEMENT_BLOCK_TYPE"
+                readonly="true"
+        />
+        <field name="site_id"
+               type="siteid"
+               default="0"
+               label="COM_LANDINGMANAGEMENT_COMMENT_SITE_ID"
+               readonly="false"
+        />
+        <fields name="params">
+            <fieldset name="basic">
+
+            </fieldset>
+        </fields>
+    </fieldset>
+</form>

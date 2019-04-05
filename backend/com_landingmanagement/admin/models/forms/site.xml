@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<form>
+    <fieldset addfieldpath="administrator/components/com_landingmanagement/models/fields">
+        <field name="id"
+               type="text"
+               default="0"
+               label="JGLOBAL_FIELD_ID_LABEL"
+               readonly="true"/>
+        <field name="title"
+               type="text"
+               label="JGLOBAL_TITLE"
+               description="JFIELD_TITLE_DESC"
+               required="true"
+               class="inputbox input-xxlarge input-large-text"
+               size="40"/>
+        <field name="main_blocks"
+               type="blocks"
+               label="COM_LANDINGMANAGEMENT_MAIN_BLOCKS"
+               description="COM_LANDINGMANAGEMENT_MAIN_BLOCKS_DESC"
+               size="80"
+               class="inputbox"
+        />
+        <field
+                name="published"
+                type="list"
+                label="JSTATUS"
+                description="JFIELD_PUBLISHED_DESC"
+                class="chzn-color-state"
+                filter="intval"
+                size="1"
+                default="1">
+            <option value="1">JPUBLISHED</option>
+            <option value="0">JUNPUBLISHED</option>
+        </field>
+        <field
+                name="text"
+                type="editor"
+                label="JGLOBAL_FULL_TEXT"
+                description="JGLOBAL_FULL_TEXT"
+                buttons="true"
+                filter="RAW"/>
+        <field
+                name="metatitle"
+                type="textarea"
+                label="COM_LANDINGMANAGEMENT_META_TITLE"
+                description="COM_LANDINGMANAGEMENT_META_TITLE"
+                class="inputbox"
+                rows="3"
+                cols="30"/>
+        <field name="metadesc"
+               type="textarea"
+               label="JFIELD_META_DESCRIPTION_LABEL"
+               description="JFIELD_META_DESCRIPTION_DESC"
+               class="inputbox"
+               rows="3"
+               cols="30"/>
+        <field
+                name="created_by"
+                type="user"
+                label="JGLOBAL_FIELD_CREATED_BY_LABEL"
+                description="JGLOBAL_FIELD_CREATED_BY_LABEL"/>
+        <field
+                name="created"
+                type="calendar"
+                label="JGLOBAL_CREATED_DATE"
+                description="JGLOBAL_CREATED_DATE"
+                size="22"
+                class="inputbox" format="%Y-%m-%d %H:%M:%S"
+                filter="user_utc"/>
+
+
+        <field name="logo"
+               type="media"
+               label="COM_LANDINGMANAGEMENT_LOGO"
+               description="COM_LANDINGMANAGEMENT_LOGO_DESC"
+        />
+
+        <field name="phone"
+               type="textarea"
+               label="COM_LANDINGMANAGEMENT_PHONE"
+               description="COM_LANDINGMANAGEMENT_PHONE_DESC"
+               filter="RAW"
+               class="inputbox"
+        />
+
+        <field name="address"
+               type="textarea"
+               label="COM_LANDINGMANAGEMENT_ADDRESS"
+               description="COM_LANDINGMANAGEMENT_ADDRESS_DESC"
+               filter="RAW"
+               class="inputbox"
+        />
+        <field name="abstract"
+               type="multiple"
+               label="COM_LANDINGMANAGEMENT_ABSTRACT"
+               description="COM_LANDINGMANAGEMENT_ABSTRACT_DESC"
+               filter="array"
+               class="inputbox"
+        />
+        <field name="template"
+               type="text"
+               label="COM_LANDINGMANAGEMENT_TEMPLATE"
+               description="COM_LANDINGMANAGEMENT_TEMPLATE"
+               default="default"
+               class="inputbox"
+        />
+        <field name="domain"
+               type="text"
+               label="COM_LANDINGMANAGEMENT_DOMAIN"
+               description="COM_LANDINGMANAGEMENT_DOMAIN"
+               default=""
+               required="true"
+               class="inputbox"
+        />
+
+        <fields name="params">
+            <fieldset name="basic">
+
+            </fieldset>
+        </fields>
+    </fieldset>
+
+</form>

@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<extension type="component" version="1.6.0" method="upgrade">
+    <name>com_landingmanagement</name>
+    <author>Joomline</author>
+    <authorEmail>sale@joomline.ru</authorEmail>
+    <authorUrl>joomline.ru</authorUrl>
+    <copyright>joomline.ru</copyright>
+    <license>GPL v2 or later</license>
+    <version>1.0</version>
+    <description>COM_LANDINGMANAGEMENT_DESC</description>
+    <creationDate>07 May 2018</creationDate>
+    <install>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <uninstall>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+    <administration>
+        <menu>COM_LANDINGMANAGEMENT</menu>
+        <submenu>
+			<menu link="option=com_landingmanagement&amp;view=sites" view="sites" img="class:sites" alt="Landingmanagement/Site">SITE_SUBMENU</menu>
+			<menu link="option=com_landingmanagement&amp;view=comments" view="comments" img="class:comments" alt="Landingmanagement/Comment">COMMENT_SUBMENU</menu>
+			<menu link="option=com_landingmanagement&amp;view=blocks" view="blocks" img="class:blocks" alt="Landingmanagement/Block">BLOCK_SUBMENU</menu>
+			<menu link="option=com_landingmanagement&amp;view=pages" view="pages" img="class:pages" alt="Landingmanagement/Page">PAGE_SUBMENU</menu>
+        </submenu>
+        <files folder="admin">
+            <filename>index.html</filename>
+            <filename>landingmanagement.php</filename>
+            <filename>controller.php</filename>
+            <filename>config.xml</filename>
+            <filename>access.xml</filename>
+            <folder>sql</folder>
+            <folder>tables</folder>
+            <folder>models</folder>
+            <folder>views</folder>
+            <folder>controllers</folder>
+            <folder>helpers</folder>
+            <folder>language</folder>
+        </files>
+        <languages folder="admin">
+            <language tag="en-GB">language/en-GB/en-GB.com_landingmanagement.ini</language>
+            <language tag="ru-RU">language/ru-RU/ru-RU.com_landingmanagement.ini</language>
+            <language tag="en-GB">language/en-GB/en-GB.com_landingmanagement.sys.ini</language>
+            <language tag="ru-RU">language/ru-RU/ru-RU.com_landingmanagement.sys.ini</language>
+        </languages>
+    </administration>
+</extension>
