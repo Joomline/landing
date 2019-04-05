@@ -29,7 +29,6 @@
 
 <!-- Wrapper -->
 <div id="wrapper" class="site">
-<?php print_r($this->abstract); ?>
     <!-- menu -->
     <?php include 'menu.php'; ?>
 
