@@ -7,33 +7,26 @@
  */
 //echo '<pre>'; var_dump($this->abstract);echo '</pre>';die;
 ?>
-<footer class="wrapper style1 align-center">
-    <div id="contacts" class="contacts">
+<div class="container">
+<footer class="pt-4 my-md-5 pt-md-5 border-top">
 
-        <div itemscope="" itemtype="http://schema.org/Organization">
-            <h3>Бренд <span itemprop="name">ACHR</span></h3>
 
-            <div class="address" itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
-
-                <div>Мы находимся в Москве по адресу:
-                    <br><span itemprop="postalCode">107589</span>, <span itemprop="addressLocality">Москва</span>
-                    <br><span itemprop="streetAddress"><?php echo $this->address; ?></span></div>
-
-                <div>Наш E-mail: <a href="<?php echo $this->abstract[1]['desc']; ?>" itemprop="email"><?php echo $this->abstract[1]['desc']; ?></a>
-                    <br>Наш телефон: <a href="tel:<?php echo str_replace(array(' ', '(', ')', '-'), '', $this->phone)?>"> <strong itemprop="telephone"><?php echo $this->phone; ?></strong></a>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="menu-footer">
-            <a href="/#dealer-map">Хочу купить</a>
-            <a href="/garantiya">Гарантия</a>
-            <a href="/dealer">Дилерам</a>
-        </div>
-
-    </div>
-    <div>
-        <p>&copy; 2018 <a href="/">ACHR</a>.</p>
-    </div>
+<div class="row">
+      <div class="col-2">
+        <img class="mb-12" src="<?php echo $this->logo; ?>" alt="" width="24" height="24">
+        <small class="d-block mb-3 text-muted">&copy; <?php echo date ( 'Y' ) ; ?> <a href="/"><?php echo $this->title; ?></a></small>
+      </div>
+	   <div class="col-5 col-md">
+        <h5>Контакты</h5>
+        <ul class="list-unstyled text-small">
+          <li>Наш телефон: <a href="tel:<?php echo str_replace(array(' ', '(', ')', '-'), '', $this->phone)?>"> <?php echo $this->phone; ?></a></li>
+		  <li>Наш E-mail: <a href="<?php echo $this->abstract[1]['email']; ?>"><?php echo $this->abstract[1]['email']; ?></a></li>
+          <li>Наш адрес: <?php echo $this->address; ?></li>          
+        
+        </ul>
+      </div>
+	  	  
+</div>
+        
 </footer>
+</div>

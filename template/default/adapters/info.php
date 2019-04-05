@@ -8,5 +8,9 @@
  */
 ?>
 <div id="<?php echo $this->id; ?>">
-		<?php echo $this->input; ?>
+	<div class="card">
+	  <div class="card-body">
+			<?php echo $this->input; ?>
+		</div>
+	</div>
 </div>

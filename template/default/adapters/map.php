@@ -11,12 +11,12 @@ $this->addScript('classes/adapters/map/script.js?v=2');
 ?>
 <section class="wrapper style1 big align-center" id="<?php echo $this->id; ?>">
 
-        <h2><?php echo $this->title; ?></h2>
+        <h2 ><?php echo $this->title; ?></h2>
     <?php if(count($this->cities)) : ?>
-        <div class="chooser">
-            <span>Ваш город:</span>
+        <div class="d-flex justify-content-center mb-2">
+            <span class="mr-1">Ваш город:</span>
 	    <?php foreach($this->cities as $city) : ?>
-            <a href="#" data-latitude="<?php echo $city['lat']; ?>" data-longitude="<?php echo $city['lng']; ?>"><?php echo $city['city']; ?></a>
+            <a class="mr-1" href="#" data-latitude="<?php echo $city['lat']; ?>" data-longitude="<?php echo $city['lng']; ?>"><?php echo $city['city']; ?></a>
 	    <?php endforeach; ?>
         </div>
     <?php endif; ?>
