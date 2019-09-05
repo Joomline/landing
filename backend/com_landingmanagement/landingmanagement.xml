@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
-<extension type="component" version="1.6.0" method="upgrade">
+<extension type="component" version="3.8.0" method="upgrade">
     <name>com_landingmanagement</name>
-    <author>Joomline</author>
-    <authorEmail>sale@joomline.ru</authorEmail>
-    <authorUrl>joomline.ru</authorUrl>
-    <copyright>joomline.ru</copyright>
-    <license>GPL v2 or later</license>
-    <version>1.0</version>
+	<creationDate>05.09.2019</creationDate>
+	<copyright>(C) 2019 Arkadiy Sedelnikov, Joomline. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see	LICENSE.txt</license>
+	<authorEmail>sales@joomline.ru</authorEmail>
+	<packager>JoomLine</packager>
+	<packagerurl>https://joomline.ru</packagerurl>
+    <version>1.0.0</version>
     <description>COM_LANDINGMANAGEMENT_DESC</description>
-    <creationDate>07 May 2018</creationDate>
     <install>
         <sql>
             <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="2.5" type="plugin" group="landingmanagement">
 	<name>PLG_LANDINGMANAGEMENT_MAP_NAME</name>
-	<author>Joomline</author>
-	<creationDate>2018-04-09</creationDate>
-	<copyright>Copyright (C) 2018 Joomline. All rights reserved.</copyright>
-	<license>GNU General Public License version 2 or later</license>
+	<creationDate>05.09.2019</creationDate>
+	<copyright>(C) 2019 Arkadiy Sedelnikov, Joomline. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see	LICENSE.txt</license>
 	<authorEmail>sales@joomline.ru</authorEmail>
-	<authorUrl>joomline.ru</authorUrl>
-	<version>1.0.0</version>
+	<packager>JoomLine</packager>
+	<packagerurl>https://joomline.ru</packagerurl>
+    <version>1.0.0</version>
 	<description>PLG_LANDINGMANAGEMENT_MAP_DESC</description>
 	<files>
 		<folder>assets</folder>

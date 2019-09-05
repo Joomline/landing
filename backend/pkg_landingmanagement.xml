@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="3.8" method="upgrade">
+    <name>pkg_landingmanagement</name>
+    <author>Joomline</author>
+	<packagename>pkg_landingmanagement</packagename>
+    <creationDate>05.09.2019</creationDate>
+	<copyright>(C) 2019 Arkadiy Sedelnikov, Joomline. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see	LICENSE.txt</license>
+	<authorEmail>sales@joomline.ru</authorEmail>
+	<packager>JoomLine</packager>
+	<packagerurl>https://joomline.ru</packagerurl>
+    <version>1.0.0</version>
+    <description><![CDATA[Joomla control component for creating and managing landing pages. <iframe frameborder='0' allowtransparency='true' scrolling='no' src='https://joomline.ru/donateen.html' width='100%' height='700'></iframe>]]></description>
+
+		<files>
+			<folder type="component" id="com_landingmanagement" method="upgrade" client="site">com_landingmanagement</folder>
+			<folder type="plugin" id="comments" group="landingmanagement" method="upgrade" client="site">plugins/comments</folder>
+			<folder type="plugin" id="feedback" group="landingmanagement" method="upgrade" client="site">plugins/feedback</folder>
+			<folder type="plugin" id="info" group="landingmanagement" method="upgrade" client="site">plugins/info</folder>
+			<folder type="plugin" id="map" group="landingmanagement" method="upgrade" client="site">plugins/map</folder>
+		</files>
+
+    <updateservers><server type="extension" priority="1" name="Landing Management">https://joomline.net/update.html?extension_id=5.xml</server></updateservers>
+</extension>
