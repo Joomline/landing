@@ -20,5 +20,5 @@
 			<folder type="plugin" id="map" group="landingmanagement" method="upgrade" client="site">plugins/map</folder>
 		</files>
 
-    <updateservers><server type="extension" priority="1" name="Landing Management">https://joomline.net/update.html?extension_id=5.xml</server></updateservers>
+    <updateservers><server type="extension" priority="1" name="Landing Management">https://joomline.net/update.html?extension_id=85.xml</server></updateservers>
 </extension>
