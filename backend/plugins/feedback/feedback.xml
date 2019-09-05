@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension version="2.5" type="plugin" group="landingmanagement">
+<extension version="2.5" type="plugin" group="landingmanagement" method="upgrade">
 	<name>PLG_LANDINGMANAGEMENT_FEEDBACK_NAME</name>
+	<author>Joomline</author>
 	<creationDate>05.09.2019</creationDate>
 	<copyright>(C) 2019 Arkadiy Sedelnikov, Joomline. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later; see	LICENSE.txt</license>

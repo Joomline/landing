@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <extension type="component" version="3.8.0" method="upgrade">
+	<author>Joomline</author>
     <name>com_landingmanagement</name>
 	<creationDate>05.09.2019</creationDate>
 	<copyright>(C) 2019 Arkadiy Sedelnikov, Joomline. All rights reserved.</copyright>
@@ -40,6 +41,7 @@
             <folder>controllers</folder>
             <folder>helpers</folder>
             <folder>language</folder>
+			<folder>assets</folder>
         </files>
         <languages folder="admin">
             <language tag="en-GB">language/en-GB/en-GB.com_landingmanagement.ini</language>

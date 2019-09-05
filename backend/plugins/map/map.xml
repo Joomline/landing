@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension version="2.5" type="plugin" group="landingmanagement">
+<extension version="2.5" type="plugin" group="landingmanagement" method="upgrade">
+	<author>Joomline</author>
 	<name>PLG_LANDINGMANAGEMENT_MAP_NAME</name>
 	<creationDate>05.09.2019</creationDate>
 	<copyright>(C) 2019 Arkadiy Sedelnikov, Joomline. All rights reserved.</copyright>
